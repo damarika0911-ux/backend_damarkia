@@ -1,0 +1,2 @@
+For Creating a user database you can use this cmd in Terminal
+npx ts-node src/database/insertScript/userdatabase.ts

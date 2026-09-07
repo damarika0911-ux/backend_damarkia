@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "module": "NodeNext",       // 🔹 Change from "CommonJS" to "ESNext" for better support
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "allowSyntheticDefaultImports": true, // 🔹 Helps with importing modules properly
+    "resolveJsonModule": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
