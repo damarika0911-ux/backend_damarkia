@@ -1,0 +1,879 @@
+2026-09-07 12:43:47 [INFO]: Generated recovery/restore.sql. Import into an EMPTY database only.
+2026-09-07 12:43:47 [INFO]: Original backups are unchanged. Missing image files are not embedded in SQL.
+2026-09-07 12:44:01 [ERROR]: Recovery failed: ER_DUP_ENTRY
+2026-09-07 12:44:13 [INFO]: 0/87 images available. 87 missing. See recovery/image-report.json.
+2026-09-07 12:44:41 [ERROR]: Failed restoring users: ER_DUP_ENTRY
+2026-09-07 12:44:41 [ERROR]: Recovery failed: ER_DUP_ENTRY
+2026-09-07 12:45:24 [INFO]: Tables created/verified
+2026-09-07 12:45:24 [INFO]: Column alterations applied
+2026-09-07 12:45:24 [INFO]: Roles seeded
+2026-09-07 12:45:24 [INFO]: Districts seeded (37 entries)
+2026-09-07 12:45:24 [INFO]: Database migration completed successfully
+2026-09-07 12:45:24 [INFO]: Backup content restored. Run admin:reset to establish your admin password.
+2026-09-07 12:46:22 [INFO]: Generated recovery/restore.sql. Import into an EMPTY database only.
+2026-09-07 12:46:22 [INFO]: Original backups are unchanged. Missing image files are not embedded in SQL.
+2026-09-07 13:10:05 [INFO]: Starting database migration...
+
+2026-09-07 13:10:05 [INFO]:   Host: undefined
+2026-09-07 13:10:05 [INFO]:   Port: undefined
+2026-09-07 13:10:05 [INFO]:   Database: undefined
+2026-09-07 13:10:05 [INFO]:   User: undefined
+
+2026-09-07 13:10:05 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:10:18 [INFO]: 0/87 images available. 87 missing. See recovery/image-report.json.
+2026-09-07 13:10:49 [INFO]: Starting database migration...
+
+2026-09-07 13:10:49 [ERROR]: Migration cannot start: DATABASE_URL is missing.
+2026-09-07 13:10:49 [ERROR]: Set the Supabase Postgres pooler connection string in historyBack/.env.
+2026-09-07 13:14:43 [ERROR]: Startup failed: Set PUBLIC_API_URL to this API's public origin
+2026-09-07 13:15:18 [INFO]: Starting database migration...
+
+2026-09-07 13:15:18 [ERROR]: Migration cannot start: DATABASE_URL is missing.
+2026-09-07 13:15:18 [ERROR]: Set the Supabase Postgres pooler connection string in historyBack/.env.
+2026-09-07 13:18:56 [INFO]: Starting database migration...
+
+2026-09-07 13:18:56 [ERROR]: Migration cannot start: DATABASE_URL is missing or still contains placeholders.
+2026-09-07 13:18:56 [ERROR]: Supabase: open Connect -> Connection String -> Transaction pooler, copy the URI, and replace DATABASE_URL in historyBack/.env.
+2026-09-07 13:19:11 [ERROR]: Startup failed: Set PUBLIC_API_URL to this API's public origin
+2026-09-07 13:20:05 [INFO]: Starting database migration...
+
+2026-09-07 13:20:05 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:20:05 [INFO]:   Storage: supabase
+
+2026-09-07 13:20:05 [ERROR]: (node:27972) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:20:05 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:21:44 [ERROR]: Startup failed: Set PUBLIC_API_URL to this API's public origin
+2026-09-07 13:23:45 [ERROR]: (node:18780) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:23:45 [ERROR]: Startup failed: getaddrinfo ENOTFOUND aws-0-REGION.pooler.supabase.com
+2026-09-07 13:24:13 [ERROR]: (node:10228) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:24:13 [ERROR]: Startup failed: getaddrinfo ENOTFOUND aws-0-REGION.pooler.supabase.com
+2026-09-07 13:24:32 [ERROR]: (node:30648) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:24:32 [ERROR]: Startup failed: getaddrinfo ENOTFOUND aws-0-REGION.pooler.supabase.com
+2026-09-07 13:24:40 [ERROR]: Startup failed: Set DATABASE_URL to the Supabase Postgres pooler connection string
+2026-09-07 13:24:45 [INFO]: Starting database migration...
+
+2026-09-07 13:24:45 [ERROR]: Migration cannot start: DATABASE_URL is missing or still contains placeholders.
+2026-09-07 13:24:45 [ERROR]: Supabase: open Connect -> Connection String -> Transaction pooler, copy the URI, and replace DATABASE_URL in historyBack/.env.
+2026-09-07 13:25:00 [INFO]: Starting database migration...
+
+2026-09-07 13:25:00 [ERROR]: Migration cannot start: DATABASE_URL is missing or still contains placeholders.
+2026-09-07 13:25:00 [ERROR]: Supabase: open Connect -> Connection String -> Transaction pooler, copy the URI, and replace DATABASE_URL in historyBack/.env.
+2026-09-07 13:25:04 [ERROR]: Startup failed: Set DATABASE_URL to the Supabase Postgres pooler connection string
+2026-09-07 13:26:13 [ERROR]: Startup failed: Set DATABASE_URL to the Supabase Postgres pooler connection string
+2026-09-07 13:26:29 [ERROR]: Startup failed: Set DATABASE_URL to the Supabase Postgres pooler connection string
+2026-09-07 13:27:20 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:27:37 [ERROR]: Startup failed: relation "users" does not exist
+2026-09-07 13:27:52 [INFO]: Starting database migration...
+
+2026-09-07 13:27:52 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:27:52 [INFO]:   Storage: supabase
+
+2026-09-07 13:27:59 [INFO]: Supabase schema verified and 37 districts seeded
+2026-09-07 13:27:59 [INFO]: 
+Migration completed.
+2026-09-07 13:28:06 [INFO]: API listening on port 4200
+2026-09-07 13:28:38 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:07:58:42 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:07:58:49 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:07:58:49 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:07:58:49 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:07:58:49 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:10 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.136.1 Chrome/148.0.7778.280 Electron/42.10.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:10 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.136.1 Chrome/148.0.7778.280 Electron/42.10.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:10 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.136.1 Chrome/148.0.7778.280 Electron/42.10.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:10 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.136.1 Chrome/148.0.7778.280 Electron/42.10.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:52 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:52 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:52 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:00:52 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:01:52 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:01:52 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:01:52 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:01:52 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:02:50 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:02:50 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:02:50 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:02:50 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:03:53 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:03:53 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:03:53 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:03:53 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:04:53 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:04:53 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:04:53 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:04:53 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:05:52 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:05:52 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:05:52 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:05:52 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:06:18 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:06:18 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:06:18 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:06:18 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:08:44 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:08:44 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:08:44 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:08:44 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:09:52 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:09:52 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:09:52 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:09:52 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:40:19 [INFO]: Starting database migration...
+
+2026-09-07 13:40:19 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:40:19 [INFO]:   Storage: supabase
+
+2026-09-07 13:40:19 [ERROR]: (node:25528) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:40:19 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:40:28 [ERROR]: (node:3324) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:40:28 [ERROR]: Startup failed: self-signed certificate in certificate chain
+2026-09-07 13:40:33 [ERROR]: (node:23844) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:40:33 [ERROR]: Startup failed: self-signed certificate in certificate chain
+2026-09-07 13:40:35 [INFO]: Starting database migration...
+
+2026-09-07 13:40:35 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:40:35 [INFO]:   Storage: supabase
+
+2026-09-07 13:40:35 [ERROR]: (node:16324) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+2026-09-07 13:40:35 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:40:35 [ERROR]: Reason: self-signed certificate in certificate chain
+2026-09-07 13:40:44 [INFO]: Starting database migration...
+
+2026-09-07 13:40:44 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:40:44 [INFO]:   Storage: supabase
+
+2026-09-07 13:40:45 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:40:45 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:41:04 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:41:34 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:41:53 [INFO]: Starting database migration...
+
+2026-09-07 13:41:53 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:41:53 [INFO]:   Storage: supabase
+
+2026-09-07 13:41:54 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:41:54 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:42:02 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:42:26 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:42:57 [ERROR]: Startup failed: connect ETIMEDOUT 2406:da1a:82a:9d01:51bb:af0f:2578:71d9:5432
+2026-09-07 13:43:54 [INFO]: Starting database migration...
+
+2026-09-07 13:43:54 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:43:54 [INFO]:   Storage: supabase
+
+2026-09-07 13:43:55 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:43:55 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:44:04 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:44:14 [INFO]: Starting database migration...
+
+2026-09-07 13:44:14 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:44:14 [INFO]:   Storage: supabase
+
+2026-09-07 13:44:15 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:44:15 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:44:17 [ERROR]: Recovery failed: Set ADMIN_EMAIL and ADMIN_PASSWORD (at least 12 characters, at most 72 UTF-8 bytes) in your private environment.
+2026-09-07 13:44:23 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:44:57 [INFO]: Starting database migration...
+
+2026-09-07 13:44:57 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:44:57 [INFO]:   Storage: supabase
+
+2026-09-07 13:44:58 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:44:58 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:45:00 [ERROR]: Recovery failed: Set ADMIN_EMAIL and ADMIN_PASSWORD (at least 12 characters, at most 72 UTF-8 bytes) in your private environment.
+2026-09-07 13:45:05 [ERROR]: Startup failed: password authentication failed for user "postgres"
+2026-09-07 13:45:54 [INFO]: Starting database migration...
+
+2026-09-07 13:45:54 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:45:54 [INFO]:   Storage: supabase
+
+2026-09-07 13:45:55 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:45:55 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:46:09 [INFO]: Starting database migration...
+
+2026-09-07 13:46:09 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:46:09 [INFO]:   Storage: supabase
+
+2026-09-07 13:46:10 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:46:10 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:48:35 [INFO]: Starting database migration...
+
+2026-09-07 13:48:35 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:48:35 [INFO]:   Storage: supabase
+
+2026-09-07 13:48:36 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:48:36 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:49:03 [INFO]: Starting database migration...
+
+2026-09-07 13:49:03 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:49:03 [INFO]:   Storage: supabase
+
+2026-09-07 13:49:04 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:49:04 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:49:09 [INFO]: Starting database migration...
+
+2026-09-07 13:49:09 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:49:09 [INFO]:   Storage: supabase
+
+2026-09-07 13:49:10 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:49:10 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:49:14 [INFO]: Starting database migration...
+
+2026-09-07 13:49:14 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:49:14 [INFO]:   Storage: supabase
+
+2026-09-07 13:49:15 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:49:15 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:49:32 [INFO]: Starting database migration...
+
+2026-09-07 13:49:32 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:49:32 [INFO]:   Storage: supabase
+
+2026-09-07 13:49:33 [ERROR]: Migration failed; database setup is incomplete.
+2026-09-07 13:49:33 [ERROR]: Reason: password authentication failed for user "postgres"
+2026-09-07 13:50:09 [INFO]: Starting database migration...
+
+2026-09-07 13:50:09 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:50:09 [INFO]:   Storage: supabase
+
+2026-09-07 13:50:14 [INFO]: Supabase schema verified and 37 districts seeded
+2026-09-07 13:50:14 [INFO]: 
+Migration completed.
+2026-09-07 13:50:15 [INFO]: Starting database migration...
+
+2026-09-07 13:50:15 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:50:15 [INFO]:   Storage: supabase
+
+2026-09-07 13:50:23 [INFO]: Supabase schema verified and 37 districts seeded
+2026-09-07 13:50:23 [INFO]: 
+Migration completed.
+2026-09-07 13:50:24 [ERROR]: Recovery failed: 42601
+2026-09-07 13:50:29 [INFO]: Starting database migration...
+
+2026-09-07 13:50:29 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:50:29 [INFO]:   Storage: supabase
+
+2026-09-07 13:50:36 [INFO]: Supabase schema verified and 37 districts seeded
+2026-09-07 13:50:36 [INFO]: 
+Migration completed.
+2026-09-07 13:50:39 [ERROR]: Recovery failed: 42703
+2026-09-07 13:50:50 [ERROR]: Recovery failed: 42703 
+2026-09-07 13:51:02 [ERROR]: Recovery failed: column "user_verify" of relation "users" does not exist 
+2026-09-07 13:51:04 [INFO]: API listening on port 3000
+2026-09-07 13:51:26 [INFO]: Starting database migration...
+
+2026-09-07 13:51:26 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:51:26 [INFO]:   Storage: supabase
+
+2026-09-07 13:51:30 [INFO]: API listening on port 3000
+2026-09-07 13:51:37 [INFO]: Supabase schema verified and 37 districts seeded
+2026-09-07 13:51:37 [INFO]: 
+Migration completed.
+2026-09-07 13:52:00 [INFO]: API listening on port 3000
+2026-09-07 13:52:00 [ERROR]: Recovery failed: column "status" is of type boolean but expression is of type integer You will need to rewrite or cast the expression.
+2026-09-07 13:52:14 [INFO]: API listening on port 3000
+2026-09-07 13:52:15 [INFO]: Admin account is ready. Remove ADMIN_PASSWORD from the environment after use.
+::1 - - [07/Sep/2026:08:22:30 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:22:30 +0000] "POST /api/v2/people HTTP/1.1" 200 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:22:30 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 67 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:22:30 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:52:34 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:22:37 +0000] "GET /health HTTP/1.1" 200 35 "-" "curl/8.11.0"
+2026-09-07 13:52:48 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+2026-09-07 13:53:00 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:08:23:21 +0000] "POST /api/v2/program HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:23:30 +0000] "POST /api/v2/product HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:54:19 [INFO]: API listening on port 3000
+2026-09-07 13:54:25 [INFO]: API listening on port 3000
+2026-09-07 13:54:27 [INFO]: Starting database migration...
+
+2026-09-07 13:54:27 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:54:27 [INFO]:   Storage: supabase
+
+2026-09-07 13:54:37 [INFO]: Supabase schema verified, 37 districts and demo content seeded
+2026-09-07 13:54:37 [INFO]: 
+Migration completed.
+2026-09-07 13:55:12 [INFO]: Starting database migration...
+
+2026-09-07 13:55:12 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:55:12 [INFO]:   Storage: supabase
+
+2026-09-07 13:55:23 [INFO]: Supabase schema verified, 37 districts and demo content seeded
+2026-09-07 13:55:23 [INFO]: 
+Migration completed.
+2026-09-07 13:55:56 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:08:26:09 +0000] "POST /api/v2/people HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:26:09 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:26:09 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 599 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:26:09 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:56:32 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:08:26:32 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:26:32 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 599 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:26:32 +0000] "POST /api/v2/people HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:26:32 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:56:41 [INFO]: Starting database migration...
+
+2026-09-07 13:56:41 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:56:41 [INFO]:   Storage: supabase
+
+2026-09-07 13:56:42 [INFO]: API listening on port 3000
+2026-09-07 13:56:51 [INFO]: Starting database migration...
+
+2026-09-07 13:56:51 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 13:56:51 [INFO]:   Storage: supabase
+
+2026-09-07 13:56:58 [INFO]: Supabase schema verified, 37 districts and up to 10 records seeded per content table
+2026-09-07 13:56:58 [INFO]: 
+Migration completed.
+2026-09-07 13:57:04 [INFO]: Supabase schema verified, 37 districts and up to 10 records seeded per content table
+2026-09-07 13:57:04 [INFO]: 
+Migration completed.
+2026-09-07 13:57:13 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:08:27:45 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:57:46 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:27:46 +0000] "POST /api/v2/program HTTP/1.1" 200 4883 "-" "curl/8.11.0"
+2026-09-07 13:58:07 [INFO]: API listening on port 3000
+2026-09-07 13:58:08 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+2026-09-07 13:58:22 [INFO]: API listening on port 3000
+2026-09-07 13:58:22 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:28:22 +0000] "POST /api/v2/product HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:58:31 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:28:47 +0000] "GET /api/v2/program HTTP/1.1" 200 4883 "-" "curl/8.11.0"
+::ffff:127.0.0.1 - - [07/Sep/2026:08:28:51 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:28:52 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:28:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:28:52 +0000] "POST /api/v2/people HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 13:58:56 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+2026-09-07 13:59:06 [INFO]: API listening on port 3000
+2026-09-07 13:59:11 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:29:24 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:29:27 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:29:27 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:29:28 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:29:28 +0000] "POST /api/v2/people HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:31:12 +0000] "POST /api/v2/program HTTP/1.1" 200 5723 "-" "curl/8.11.0"
+::1 - - [07/Sep/2026:08:31:13 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 3573 "-" "curl/8.11.0"
+::1 - - [07/Sep/2026:08:31:18 +0000] "POST /api/v2/program HTTP/1.1" 200 - "-" "node"
+::1 - - [07/Sep/2026:08:31:19 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 - "-" "node"
+2026-09-07 14:01:35 [INFO]: API listening on port 3000
+2026-09-07 14:01:43 [INFO]: Starting database migration...
+
+2026-09-07 14:01:43 [INFO]:   Database: Supabase Postgres pooler
+2026-09-07 14:01:43 [INFO]:   Storage: supabase
+
+2026-09-07 14:01:46 [INFO]: API listening on port 3000
+2026-09-07 14:01:50 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+2026-09-07 14:01:59 [INFO]: Supabase schema verified, 37 districts and up to 10 records seeded per content table
+2026-09-07 14:01:59 [INFO]: 
+Migration completed.
+2026-09-07 14:02:16 [INFO]: API listening on port 3000
+2026-09-07 14:03:06 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+2026-09-07 14:04:22 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:08:34:26 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 14:04:36 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:34:38 +0000] "POST /api/auth/login HTTP/1.1" 200 698 "-" "curl/8.11.0"
+2026-09-07 14:04:50 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:34:56 +0000] "POST /api/v2/product HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:16 +0000] "OPTIONS /api/auth/login HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:17 +0000] "POST /api/auth/login HTTP/1.1" 200 698 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:17 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:17 +0000] "GET /api/v1/userdetails HTTP/1.1" 200 230 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/admin/admins HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/program HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/role HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/people HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/district HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/archeologist HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/contact HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/admin/admins HTTP/1.1" 200 316 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/district HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/archeologist HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "OPTIONS /api/v1/contact HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/product HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/people HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/program HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:18 +0000] "GET /api/v1/role HTTP/1.1" 200 857 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/contact HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/product-category HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/admin/admins HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/archeologist HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/district HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/program HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/people HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/contact HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:19 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:31 +0000] "OPTIONS /api/v1/admin/admins HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:31 +0000] "OPTIONS /api/v1/admin/admins HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:31 +0000] "OPTIONS /api/v1/role HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:31 +0000] "OPTIONS /api/v1/role HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:31 +0000] "OPTIONS /api/v1/role HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:31 +0000] "OPTIONS /api/v1/role HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:32 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:32 +0000] "GET /api/v1/admin/admins HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:32 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:32 +0000] "GET /api/v1/admin/admins HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:32 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:32 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:35 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:35 +0000] "GET /api/v1/role HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:37 +0000] "OPTIONS /api/v1/people HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:37 +0000] "OPTIONS /api/v1/people HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:37 +0000] "GET /api/v1/people HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:35:37 +0000] "GET /api/v1/people HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:02 +0000] "OPTIONS /api/upload HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:04 +0000] "POST /api/upload HTTP/1.1" 200 175 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:04 +0000] "OPTIONS /api/v1/people/10 HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:04 +0000] "PUT /api/v1/people/10 HTTP/1.1" 200 565 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:14 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:27 +0000] "POST /api/v2/archeologist HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:27 +0000] "POST /api/v2/district HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:27 +0000] "POST /api/v2/people HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:27 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:37:55 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:04 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:04 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:04 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:04 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:04 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:04 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:05 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:05 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:05 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:05 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:06 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:06 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:07 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:07 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:26 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:27 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:28 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:28 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:28 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:38:28 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 14:09:42 [INFO]: API listening on port 3000
+2026-09-07 14:09:53 [INFO]: API listening on port 3000
+::1 - - [07/Sep/2026:08:41:33 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:11 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:12 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:13 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:31 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:32 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:32 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:32 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:32 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:33 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:33 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:46 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:47 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:47 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:47 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:47 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:47 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:48 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:45:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:31 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:32 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:32 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:33 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:33 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:33 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:33 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:41 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:41 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:42 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:42 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:42 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:42 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:46:43 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:48:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:56 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:56 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:57 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:57 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:57 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:49:57 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:17 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:18 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:18 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:19 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:19 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:19 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:19 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:19 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:19 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:20 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:20 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:20 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:20 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:48 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:48 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:54:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:55:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+2026-09-07 14:26:28 [ERROR]: Error: listen EADDRINUSE: address already in use :::3000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
+[90m    at listenInCluster (node:net:1996:12)[39m
+[90m    at Server.listen (node:net:2101:7)[39m
+    at Function.listen [90m(E:\Freelance\damarika\historyBack\[39mnode_modules\[4mexpress[24m\lib\application.js:635:24[90m)[39m
+    at start [90m(E:\Freelance\damarika\historyBack\[39msrc\index.ts:76:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3000[39m
+}
+::1 - - [07/Sep/2026:08:56:32 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:32 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:33 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:34 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:34 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:34 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:56:34 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:22 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:23 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:23 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:23 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:23 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:24 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:24 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:58:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:08:59:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:00:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:32 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:33 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:33 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:33 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:33 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:34 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:34 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:01:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:17 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:18 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:18 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:19 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:19 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:19 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:19 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:02:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:50 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:03:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:04:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:47 +0000] "OPTIONS /api/v1/userdetails HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:48 +0000] "GET /api/v1/userdetails HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:49 +0000] "OPTIONS /api/v1/product HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:49 +0000] "GET /api/v1/product HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:49 +0000] "OPTIONS /api/v1/product-category HTTP/1.1" 204 0 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:49 +0000] "GET /api/v1/product-category HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+::1 - - [07/Sep/2026:09:05:52 +0000] "POST /api/v2/program HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
