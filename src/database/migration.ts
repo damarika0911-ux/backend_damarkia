@@ -162,6 +162,24 @@ export async function runMigrations(): Promise<void> {
         "INSERT INTO archaeological_sites (name,type,description,period,districtid,status,created_by,updated_by) VALUES (?,?,?,?,?,true,?,?)",
         [name, type, description, period, districtId, adminId, adminId]);
 
+    const siteDistricts: Record<string, string> = {
+        "Gangaikonda Cholapuram": "Ariyalur",
+        "Adichanallur": "Thoothukkudi",
+        "Thanjavur Brihadeeswarar Temple": "Thanjavur",
+        "Poompuhar": "Mayiladuthurai",
+        "Madurai Heritage Quarter": "Madurai",
+        "Kodumanal": "Erode",
+        "Gulf of Mannar": "Thoothukkudi",
+        "Kanchipuram Temple District": "Kanchipuram",
+    };
+    for (const [siteName, district] of Object.entries(siteDistricts)) {
+        await promisePool.query(
+            `UPDATE archaeological_sites SET districtId=(SELECT id FROM district WHERE lower(name)=lower(?) LIMIT 1)
+             WHERE name=? AND EXISTS (SELECT 1 FROM district WHERE lower(name)=lower(?))`,
+            [district, siteName, district]
+        );
+    }
+
     const extraContacts = [
         ["researcher@example.com", "Research collaboration enquiry"], ["student@example.com", "Training programme question"],
         ["heritagegroup@example.com", "Community heritage partnership"], ["museum@example.com", "Collection documentation request"],
