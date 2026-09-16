@@ -4,6 +4,14 @@ import { promisePool } from "../database/connection";
 import { sendResponse } from "../utils/responseHandler";
 import { writableFields, crudData } from "./crudFields";
 import { AuthRequest } from "../middleware/auth";
+import { deleteStoredImages } from "../routes/upload";
+
+function recordImages(record: Record<string, any> | undefined): string[] {
+  if (!record) return [];
+  const values = [record.image];
+  try { values.push(...(Array.isArray(record.images) ? record.images : JSON.parse(record.images || "[]"))); } catch { /* legacy malformed JSON */ }
+  return values.filter((value): value is string => typeof value === "string");
+}
 
 export function createCrudController(tableName: string) {
   if (!writableFields[tableName]) throw new Error("Unsupported resource");
@@ -69,6 +77,8 @@ export function createCrudController(tableName: string) {
     update: async (req: Request, res: Response) => {
       try {
         const { id } = req.params;
+        const [existingRows] = await promisePool.query<RowDataPacket[]>(`SELECT * FROM \`${tableName}\` WHERE id = ?`, [id]);
+        if (!existingRows.length) return sendResponse(res, 404, false, "Record not found");
         const data = crudData(tableName, req.body);
         if (!Object.keys(data).length) return sendResponse(res, 400, false, "No editable fields provided");
         if (tableName === "roles") {
@@ -96,6 +106,10 @@ export function createCrudController(tableName: string) {
         if (updated.length === 0) {
           return sendResponse(res, 404, false, "Record not found");
         }
+        // The database now points to the new media. Clean up only the managed
+        // files that are no longer referenced by this record.
+        const retained = new Set(recordImages(updated[0]));
+        await deleteStoredImages(recordImages(existingRows[0]).filter((url) => !retained.has(url)));
         sendResponse(res, 200, true, `${tableName} updated successfully`, updated[0]);
       } catch (error: any) {
         sendResponse(res, 500, false, error.message || "Internal server error");
@@ -104,6 +118,8 @@ export function createCrudController(tableName: string) {
 
     remove: async (req: Request, res: Response) => {
       try {
+        const [existingRows] = await promisePool.query<RowDataPacket[]>(`SELECT * FROM \`${tableName}\` WHERE id = ?`, [req.params.id]);
+        if (!existingRows.length) return sendResponse(res, 404, false, "Record not found");
         const references: Record<string, [string, string][]> = {
           roles: [["users", "role_id"], ["peoples", "role_id"]],
           product_categories: [["products", "categoryId"]],
@@ -124,6 +140,7 @@ export function createCrudController(tableName: string) {
         if (result.affectedRows === 0) {
           return sendResponse(res, 404, false, "Record not found");
         }
+        await deleteStoredImages(recordImages(existingRows[0]));
         sendResponse(res, 200, true, `${tableName} deleted successfully`);
       } catch (error: any) {
         sendResponse(res, 500, false, error.message || "Internal server error");

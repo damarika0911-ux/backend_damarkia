@@ -14,6 +14,7 @@ import bcrypt from "bcryptjs";
 import { Response } from "express";
 import { rateLimit } from "express-rate-limit";
 import { sendContactReply } from "../../services/mailService";
+import { deleteStoredImages } from "../upload";
 
 const router = Router();
 
@@ -68,6 +69,8 @@ router.put("/v1/admin/:id", auth, async (req: AuthRequest, res) => {
   try {
     const { id } = req.params;
     const { name, email, phoneNumber, role_id, image, status, user_verify } = req.body;
+    const [existingUsers] = await promisePool.query<RowDataPacket[]>("SELECT image FROM users WHERE id=?", [id]);
+    if (!existingUsers.length) return sendResponse(res, 404, false, "Record not found");
     const [duplicates] = await promisePool.query<RowDataPacket[]>("SELECT id FROM users WHERE email=? AND id<>?", [email || "", id]);
     if (duplicates.length) return sendResponse(res, 409, false, "This email is already in use");
     if (!name || typeof email !== "string" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !role_id) return sendResponse(res, 400, false, "Name, email and role are required");
@@ -84,6 +87,9 @@ router.put("/v1/admin/:id", auth, async (req: AuthRequest, res) => {
       "SELECT u.id,u.name,u.email,u.phoneNumber,u.role_id,u.image,u.status,u.user_verify,r.role_name FROM users u LEFT JOIN roles r ON u.role_id = r.id WHERE u.id = ?",
       [id]
     );
+    if (existingUsers[0].image && existingUsers[0].image !== updated[0]?.image) {
+      await deleteStoredImages([existingUsers[0].image]);
+    }
     sendResponse(res, 200, true, "User updated successfully", updated[0]);
   } catch (error: any) {
     sendResponse(res, 500, false, error.message);
