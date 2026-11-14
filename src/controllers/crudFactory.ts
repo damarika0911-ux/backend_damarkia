@@ -1,7 +1,9 @@
 import { Request, Response } from "express";
-import { RowDataPacket, ResultSetHeader } from "mysql2";
+import type { RowDataPacket, ResultSetHeader } from "../types/db";
 import { promisePool } from "../database/connection";
-import { sendResponse } from "../utils/responseHandler";
+import { sendError, sendResponse } from "../utils/responseHandler";
+import { mediaFields } from "../utils/media";
+import { pageMeta, pageParams } from "../utils/pagination";
 import { writableFields, crudData } from "./crudFields";
 import { AuthRequest } from "../middleware/auth";
 import { deleteStoredImages } from "../routes/upload";
@@ -16,14 +18,31 @@ function recordImages(record: Record<string, any> | undefined): string[] {
 export function createCrudController(tableName: string) {
   if (!writableFields[tableName]) throw new Error("Unsupported resource");
   return {
-    getAll: async (_req: Request, res: Response) => {
+    getAll: async (req: Request, res: Response) => {
       try {
+        // Optional paging: ?limit=10&offset=0 (or ?page=). Without ?limit the full list is returned,
+        // which is what the current admin tables expect.
+        if (req.query.limit !== undefined || req.query.page !== undefined) {
+          const p = pageParams(req, { defaultLimit: 10, maxLimit: 100 });
+          const [rows] = await promisePool.query<RowDataPacket[]>(
+            `SELECT *, COUNT(*) OVER() AS total_count FROM \`${tableName}\` ORDER BY id DESC LIMIT ? OFFSET ?`,
+            [p.limit, p.offset]
+          );
+          let total = rows.length ? Number(rows[0].total_count) : 0;
+          if (!rows.length && p.offset > 0) {
+            const [c] = await promisePool.query<RowDataPacket[]>(`SELECT COUNT(*) AS n FROM \`${tableName}\``);
+            total = Number(c[0]?.n || 0);
+          }
+          const data = rows.map(({ total_count, ...row }) => row);
+          res.json({ success: true, message: `${tableName} fetched successfully`, data: mediaFields(data), meta: pageMeta(total, p, data.length) });
+          return;
+        }
         const [rows] = await promisePool.query<RowDataPacket[]>(
           `SELECT * FROM \`${tableName}\` ORDER BY id DESC`
         );
         sendResponse(res, 200, true, `${tableName} fetched successfully`, rows);
       } catch (error: any) {
-        sendResponse(res, 500, false, error.message || "Internal server error");
+        sendError(res, error);
       }
     },
 
@@ -38,7 +57,7 @@ export function createCrudController(tableName: string) {
         }
         sendResponse(res, 200, true, `${tableName} fetched successfully`, rows[0]);
       } catch (error: any) {
-        sendResponse(res, 500, false, error.message || "Internal server error");
+        sendError(res, error);
       }
     },
 
@@ -70,7 +89,7 @@ export function createCrudController(tableName: string) {
 
         sendResponse(res, 201, true, `${tableName} created successfully`, created[0]);
       } catch (error: any) {
-        sendResponse(res, 500, false, error.message || "Internal server error");
+        sendError(res, error);
       }
     },
 
@@ -112,7 +131,7 @@ export function createCrudController(tableName: string) {
         await deleteStoredImages(recordImages(existingRows[0]).filter((url) => !retained.has(url)));
         sendResponse(res, 200, true, `${tableName} updated successfully`, updated[0]);
       } catch (error: any) {
-        sendResponse(res, 500, false, error.message || "Internal server error");
+        sendError(res, error);
       }
     },
 
@@ -143,7 +162,7 @@ export function createCrudController(tableName: string) {
         await deleteStoredImages(recordImages(existingRows[0]));
         sendResponse(res, 200, true, `${tableName} deleted successfully`);
       } catch (error: any) {
-        sendResponse(res, 500, false, error.message || "Internal server error");
+        sendError(res, error);
       }
     },
   };

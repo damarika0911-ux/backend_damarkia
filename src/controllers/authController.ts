@@ -1,15 +1,20 @@
 import bcrypt from "bcryptjs";
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import { RowDataPacket, ResultSetHeader } from "mysql2";
+import crypto from "node:crypto";
+import type { RowDataPacket, ResultSetHeader } from "../types/db";
 import { promisePool } from "../database/connection";
 import { sendResponse } from "../utils/responseHandler";
 import { AuthRequest, credentialVersion } from "../middleware/auth";
 
-export const login = async (req: Request, res: Response) => {
-  const { email, password } = req.body;
+// A real bcrypt hash of a random value. Comparing against it when the email is unknown makes
+// "no such user" take as long as "wrong password", so response time does not reveal which emails exist.
+const DUMMY_HASH = bcrypt.hashSync(crypto.randomBytes(16).toString("hex"), 12);
 
-  if (typeof email !== "string" || typeof password !== "string" || !email || !password) {
+export const login = async (req: Request, res: Response) => {
+  const { email, password } = req.body || {};
+
+  if (typeof email !== "string" || typeof password !== "string" || !email || !password || email.length > 254 || Buffer.byteLength(password) > 72) {
     return sendResponse(res, 400, false, "Email and password are required");
   }
 
@@ -19,12 +24,9 @@ export const login = async (req: Request, res: Response) => {
       [email]
     );
 
-    if (users.length !== 1) {
-      return sendResponse(res, 401, false, "Invalid email or password");
-    }
-
-    const user = users[0];
-    const isValidPassword = await bcrypt.compare(password, user.password);
+    const user = users.length === 1 ? users[0] : null;
+    const isValidPassword = await bcrypt.compare(password, user?.password || DUMMY_HASH);
+    if (!user) return sendResponse(res, 401, false, "Invalid email or password");
 
     if (!isValidPassword || !user.status || !user.role_status) {
       return sendResponse(res, 401, false, "Invalid email or password");
@@ -32,8 +34,8 @@ export const login = async (req: Request, res: Response) => {
 
     const token = jwt.sign(
       { id: user.id, email: user.email, role_id: user.role_id, version: credentialVersion(user.password) },
-      process.env.JWT_SECRET || "",
-      { expiresIn: "24h" }
+      process.env.JWT_SECRET as string,
+      { expiresIn: "12h", algorithm: "HS256" }
     );
 
     const { password: _, last_token: _token, ...userWithoutPassword } = user;
@@ -41,45 +43,6 @@ export const login = async (req: Request, res: Response) => {
     sendResponse(res, 200, true, "Login successful", {
       accessToken: token,
       user: userWithoutPassword,
-    });
-  } catch (error: any) {
-    sendResponse(res, 500, false, error.message || "Internal server error");
-  }
-};
-
-export const register = async (req: Request, res: Response) => {
-  const { name, email, password, phoneNumber, role_id, image } = req.body;
-
-  if (!name || !email || !password) {
-    return sendResponse(res, 400, false, "Name, email and password are required");
-  }
-
-  try {
-    const [existing] = await promisePool.query<RowDataPacket[]>(
-      "SELECT id FROM users WHERE email = ?",
-      [email]
-    );
-
-    if (existing.length > 0) {
-      return sendResponse(res, 400, false, "User already exists with this email");
-    }
-
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    const [result] = await promisePool.query<ResultSetHeader>(
-      "INSERT INTO users (name, email, password, phoneNumber, role_id, image) VALUES (?, ?, ?, ?, ?, ?)",
-      [name, email, hashedPassword, phoneNumber || null, role_id || 2, image ? JSON.stringify(image) : null]
-    );
-
-    const token = jwt.sign(
-      { id: result.insertId, email, role_id: role_id || 2 },
-      process.env.JWT_SECRET || "",
-      { expiresIn: "24h" }
-    );
-
-    sendResponse(res, 201, true, "User registered successfully", {
-      accessToken: token,
-      user: { id: result.insertId, name, email, role_id: role_id || 2 },
     });
   } catch (error: any) {
     sendResponse(res, 500, false, error.message || "Internal server error");

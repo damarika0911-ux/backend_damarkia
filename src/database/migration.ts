@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import logger from "../utils/logger";
-import { promisePool } from "./connection";
+import pool, { promisePool } from "./connection";
 import { districtName } from "./districtNames";
 import districtSeed from "./districtSeed.json";
 
@@ -213,4 +213,10 @@ export async function runMigrations(): Promise<void> {
     }
 
     logger.info(`Supabase schema verified, ${districtSeed.length} districts and up to 10 records seeded per content table`);
+
+    // Always finish by locking down direct REST/Storage access (Row Level Security, no anon writes).
+    // Runs as one transaction on a single connection (the file has BEGIN/COMMIT).
+    const security = await fs.readFile(path.resolve(process.cwd(), "supabase/security.sql"), "utf8");
+    await pool.query(security);
+    logger.info("Row Level Security enabled on all tables; public storage write policies removed");
 }

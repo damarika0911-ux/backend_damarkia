@@ -8,6 +8,7 @@ import path from "node:path";
 import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
 import { auth } from "../middleware/auth";
+import { uploadLimiter } from "../middleware/rateLimits";
 
 const router = Router();
 const driver = process.env.STORAGE_DRIVER || "local";
@@ -62,7 +63,7 @@ export async function deleteStoredImages(urls: unknown[]) {
   }));
 }
 
-router.post("/upload", auth, upload.single("image"), async (req, res, next) => {
+router.post("/upload", auth, uploadLimiter, upload.single("image"), async (req, res, next) => {
   try {
     if (!req.file) return res.status(400).json({ success: false, message: "Choose an image" });
     const type = imageType(req.file.buffer);

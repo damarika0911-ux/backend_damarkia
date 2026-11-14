@@ -72,6 +72,15 @@ create table if not exists email_template (
   status boolean default true, created_by bigint, updated_by bigint, createdat timestamptz default now(), updatedat timestamptz default now()
 );
 
+-- Indexes for the paginated public lists (WHERE status = true ORDER BY id DESC LIMIT n)
+create index if not exists idx_program_active on program (id desc) where status = true;
+create index if not exists idx_products_active on products (id desc) where status = true;
+create index if not exists idx_peoples_active on peoples (id) where status = true;
+create index if not exists idx_sites_active on archaeological_sites (id desc) where status = true;
+create index if not exists idx_sites_district on archaeological_sites (districtid);
+create index if not exists idx_district_active_name on district (name) where status = true;
+create index if not exists idx_contact_form_id on contact_form (id desc);
+
 insert into roles (role_name, view_access, edit_access, delete_access, create_access)
 values ('admin', true, true, true, true), ('moderator', true, true, false, true), ('user', true, false, false, false)
 on conflict (role_name) do update set status = true;
@@ -80,6 +89,5 @@ insert into storage.buckets (id, name, public)
 values ('uploads', 'uploads', true)
 on conflict (id) do update set public = true;
 
-create policy "Public can read uploads" on storage.objects for select using (bucket_id = 'uploads');
-create policy "Authenticated users can upload" on storage.objects for insert to authenticated with check (bucket_id = 'uploads');
-create policy "Authenticated users can update uploads" on storage.objects for update to authenticated using (bucket_id = 'uploads');
+-- Storage access policies were removed on purpose: only the backend (secret key) writes files.
+-- See supabase/security.sql, which also enables Row Level Security on every table.

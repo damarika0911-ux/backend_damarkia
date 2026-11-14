@@ -12,9 +12,23 @@ const config: PoolConfig = {
   password: process.env.DATABASE_URL ? undefined : process.env.DB_PASS,
   database: process.env.DATABASE_URL ? undefined : process.env.DB_NAME,
   ssl: process.env.DB_SSL !== "false" ? { rejectUnauthorized: false } : undefined,
+  // Keep connections open between requests: opening a new TLS connection to Supabase
+  // costs several hundred ms. The pg default closes idle connections after only 10s.
+  max: Number(process.env.DB_POOL_MAX || 10),
+  // Below Supabase pooler idle limits; the pool reconnects on demand.
+  idleTimeoutMillis: 2 * 60 * 1000,
+  connectionTimeoutMillis: 15000,
+  keepAlive: true,
 };
 
 const pool = new Pool(config);
+
+// The database (or the Supabase pooler) may close an idle connection at any time. pg reports that as an
+// "error" event on the pool; without a listener Node treats it as unhandled and crashes the whole API.
+// Log it instead: the pool drops the broken connection and opens a fresh one for the next query.
+pool.on("error", (error) => {
+  logger.warn(`Idle database connection closed: ${error.message}`);
+});
 
 const outputNames: Record<string, string> = {
   phonenumber: "phoneNumber", roleid: "role_id", categoryid: "categoryId", districtid: "districtId",

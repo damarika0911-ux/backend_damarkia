@@ -11,7 +11,8 @@
     "db:restore": "ts-node src/database/recovery.ts restore",
     "admin:reset": "ts-node src/database/recovery.ts admin",
     "images:recover": "ts-node src/database/recoverImages.ts",
-    "test:recovery": "node --test tests/recovery.test.cjs"
+    "test:recovery": "node --test tests/recovery.test.cjs",
+    "mail:check": "ts-node src/database/mailCheck.ts"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,6 @@
   "homepage": "https://github.com/Vigneshwarrs/historyBack#readme",
   "description": "",
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
     "@types/compression": "^1.8.1",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
@@ -45,24 +45,18 @@
     "@supabase/supabase-js": "^2.115.0",
     "@types/multer": "^2.1.0",
     "@types/pg": "^8.23.1",
-    "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-rate-limit": "^8.3.2",
-    "fs": "^0.0.1-security",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "multer": "^2.1.1",
-    "mysql2": "^3.14.0",
     "nodemailer": "^10.0.0",
-    "path": "^0.12.7",
     "pg": "^8.23.0",
-    "sequelize": "^6.37.6",
-    "sequelize-typescript": "^2.1.6",
     "winston": "^3.17.0"
   }
 }

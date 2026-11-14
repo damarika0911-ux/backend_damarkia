@@ -3,23 +3,22 @@ import { auth, AuthRequest } from "../../middleware/auth";
 import { createCrudController } from "../../controllers/crudFactory";
 import {
   login,
-  register,
   getRoles,
   getUserDetails,
 } from "../../controllers/authController";
 import { promisePool } from "../../database/connection";
-import { RowDataPacket, ResultSetHeader } from "mysql2";
+import type { RowDataPacket, ResultSetHeader } from "../../types/db";
 import { sendResponse } from "../../utils/responseHandler";
 import bcrypt from "bcryptjs";
 import { Response } from "express";
-import { rateLimit } from "express-rate-limit";
-import { sendContactReply } from "../../services/mailService";
+import { loginLimiter } from "../../middleware/rateLimits";
+import { MailError, sendContactReply } from "../../services/mailService";
 import { deleteStoredImages } from "../upload";
 
 const router = Router();
 
 // ─── Auth Routes (no auth required) ────────────────────────────────
-router.post("/auth/login", rateLimit({ windowMs: 15 * 60 * 1000, limit: 20, standardHeaders: "draft-8", legacyHeaders: false }), login);
+router.post("/auth/login", loginLimiter, login);
 router.post("/auth/register", (_req, res) => sendResponse(res, 403, false, "Ask an administrator to create your account"));
 router.get("/auth/roles", auth, getRoles);
 
@@ -182,7 +181,7 @@ router.put("/v1/contact/reply/:id", auth, async (req, res) => {
     // Legacy rows used reciever_email for the visitor's address.
     const contactEmail = process.env.CONTACT_EMAIL || "support@damarika.in";
     const recipient = contacts[0].sender_email && contacts[0].sender_email !== contactEmail ? contacts[0].sender_email : contacts[0].reciever_email;
-    await sendContactReply(recipient, contacts[0].subject, reply);
+    await sendContactReply(recipient, contacts[0].subject, reply, { name: contacts[0].name, message: contacts[0].message, date: contacts[0].createdAt });
     await promisePool.query(
       "UPDATE contact_form SET repliedMessage=?, isReplied=true, replyDate=NOW() WHERE id=?",
       [reply, id]
@@ -191,8 +190,10 @@ router.put("/v1/contact/reply/:id", auth, async (req, res) => {
       "SELECT * FROM contact_form WHERE id = ?",
       [id]
     );
-    sendResponse(res, 200, true, "Reply accepted by the email server", updated[0]);
+    sendResponse(res, 200, true, "Reply sent to the visitor by email", updated[0]);
   } catch (error: any) {
+    // Email problems are shown to the (signed-in) admin so they know what to fix; nothing is marked replied.
+    if (error instanceof MailError) return sendResponse(res, 502, false, error.message);
     sendResponse(res, 500, false, error.message);
   }
 });
