@@ -12,6 +12,14 @@
     "allowSyntheticDefaultImports": true, // 🔹 Helps with importing modules properly
     "resolveJsonModule": true,
   },
-  "include": ["src/**/*"],
+  // Compile only the server and its scripts (plus everything they import). Stray or stale files under src/
+  // (e.g. left in a deploy build cache) can then never break the build.
+  "files": [
+    "src/index.ts",
+    "src/database/runMigration.ts",
+    "src/database/recovery.ts",
+    "src/database/recoverImages.ts",
+    "src/database/mailCheck.ts"
+  ],
   "exclude": ["node_modules"]
 }
